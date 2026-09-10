@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Juan Pablo Gutiérrez Quintero</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        .subtitle {
+            color: var(--accent);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .class-section {
+            margin-bottom: 2.5rem;
+        }
+        .class-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #334155;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -5px rgba(56, 189, 248, 0.1);
+            border-color: var(--accent);
+        }
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--bg-color);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+            transition: background-color 0.2s;
+            margin-top: 1rem;
+        }
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            border-top: 1px solid #334155;
+            padding-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Juan Pablo Gutiérrez Quintero</h1>
+        <p class="subtitle">Portafolio de Prácticas y Aplicaciones Web — Clase 9:00 AM</p>
+    </header>
+
+    <main>
+        <!-- CLASE 6 -->
+        <section class="class-section">
+            <h2 class="class-title">Clase 6</h2>
+            <div class="grid">
+                <div class="card">
+                    <div>
+                        <div class="card-title">Introducción</div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Aplicación base y despliegue inicial en Streamlit.</p>
+                    </div>
+                    <a href="https://clase-6---desarrollo-de-app-web-97pdkxyvqqnj5luducjg38.streamlit.app/" target="_blank" class="btn">Ver Aplicación</a>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="card-title">Texto a Voz</div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Herramienta de conversión de texto a audio interactiva.</p>
+                    </div>
+                    <a href="https://clase-6---text-to-sp-ath9eygyhb2r3rgzjhbxbk.streamlit.app/" target="_blank" class="btn">Ver Aplicación</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLASE 7 -->
+        <section class="class-section">
+            <h2 class="class-title">Clase 7</h2>
+            <div class="grid">
+                <div class="card">
+                    <div>
+                        <div class="card-title">Traductor</div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Interfaz web de traducción de idiomas integrada.</p>
+                    </div>
+                    <a href="https://traductor-ipxgbappqwcw9wmtqddyqvv.streamlit.app/" target="_blank" class="btn">Ver Aplicación</a>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="card-title">OCR</div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Reconocimiento óptico de caracteres en imágenes.</p>
+                    </div>
+                    <a href="https://ocr-clase-7-8wgd2bf4rhhdnplb52oxpm.streamlit.app/" target="_blank" class="btn">Ver Aplicación</a>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="card-title">OCR Audio</div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Procesamiento de texto extraído e integración de audio.</p>
+                    </div>
+                    <a href="https://ocr-audio-clase7-jfz3mwxpp46uwno5xyfutz.streamlit.app/" target="_blank" class="btn">Ver Aplicación</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLASE 8 -->
+        <section class="class-section">
+            <h2 class="class-title">Clase 8</h2>
+            <div class="grid">
+                <div class="card">
+                    <div>
+                        <div class="card-title">Wordcloud</div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Generador dinámico de nubes de palabras a partir de texto.</p>
+                    </div>
+                    <a href="https://wordcloud-clase8-hxs9htgtrtb9wqfc9z5o59.streamlit.app/" target="_blank" class="btn">Ver Aplicación</a>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="card-title">Sentify (Análisis de Sentimientos)</div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Evaluación de polaridad y tono emocional en textos.</p>
+                    </div>
+                    <a href="https://sentimenta---clase-8-uatalbpxsc4zhpjanabgtj.streamlit.app/" target="_blank" class="btn">Ver Aplicación</a>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="card-title">Sentify Search (TF-IDF)</div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Búsqueda y ponderación de términos mediante TF-IDF.</p>
+                    </div>
+                    <a href="https://tfidf-clase-8-juc8jdmdrpwghna6f4b8hg.streamlit.app/" target="_blank" class="btn">Ver Aplicación</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLASE 9 -->
+        <section class="class-section">
+            <h2 class="class-title">Clase 9</h2>
+            <div class="grid">
+                <div class="card">
+                    <div>
+                        <div class="card-title">YOLOv5</div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Detección de objetos en tiempo real con modelos de visión artificial.</p>
+                    </div>
+                    <a href="https://yolov5-clase9-9tg7bdcggnqyapb7p4z8yn.streamlit.app/" target="_blank" class="btn">Ver Aplicación</a>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="card-title">Teachable Machine (TM)</div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Modelo de clasificación entrenado e integrado en Streamlit.</p>
+                    </div>
+                    <a href="https://tm-clase9-6kcwat3b8fqtgeggtabkaw.streamlit.app/" target="_blank" class="btn">Ver Aplicación</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Juan Pablo Gutiérrez Quintero</p>
+    </footer>
+</div>
+
+</body>
+</html>
