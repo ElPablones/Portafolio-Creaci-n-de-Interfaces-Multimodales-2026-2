@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Juan Pablo Gutiérrez Quintero</title>
+    
+    <!-- Librería para visores 3D nativos en HTML -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
     <style>
         /* Reset y fuentes retro */
         * {
@@ -126,11 +130,30 @@
             top: 0; left: 0; width: 100%; height: 6px;
             background-color: #DC0807;
         }
+        
+        /* Contenedor del modelo 3D estilo pantalla retro */
+        .model-container {
+            width: 100%;
+            height: 140px;
+            background-color: #c0c0c0; /* Gris clásico de Windows */
+            border: 2px inset #ffffff; /* Efecto hundido */
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        model-viewer {
+            width: 100%;
+            height: 100%;
+            --poster-color: transparent;
+        }
+
         .card-title {
             font-weight: bold;
             font-size: 1.1rem;
-            margin-top: 10px;
+            margin-top: 15px;
             margin-bottom: 5px;
+            text-align: center;
         }
         .btn {
             display: block;
@@ -215,13 +238,19 @@
             <h2 class="class-title">Directorio: Clase_06</h2>
             <div class="grid">
                 <div class="card">
+                    <div class="model-container">
+                        <model-viewer src="modelos/intro.glb" auto-rotate rotation-per-second="30deg" camera-orbit="0deg 90deg 2m" disable-zoom></model-viewer>
+                    </div>
                     <div class="card-title">Intro App Web</div>
-                    <p style="font-size: 0.85rem;">App base en Streamlit.</p>
+                    <p style="font-size: 0.85rem; text-align: center;">App base en Streamlit.</p>
                     <a href="https://clase-6---desarrollo-de-app-web-97pdkxyvqqnj5luducjg38.streamlit.app/" target="_blank" class="btn">EJECUTAR .EXE</a>
                 </div>
                 <div class="card">
+                    <div class="model-container">
+                        <model-viewer src="modelos/tts.glb" auto-rotate rotation-per-second="30deg" camera-orbit="0deg 90deg 2m" disable-zoom></model-viewer>
+                    </div>
                     <div class="card-title">Texto a Voz</div>
-                    <p style="font-size: 0.85rem;">Conversión Text-to-Speech.</p>
+                    <p style="font-size: 0.85rem; text-align: center;">Conversión Text-to-Speech.</p>
                     <a href="https://clase-6---text-to-sp-ath9eygyhb2r3rgzjhbxbk.streamlit.app/" target="_blank" class="btn">EJECUTAR .EXE</a>
                 </div>
             </div>
@@ -232,14 +261,23 @@
             <h2 class="class-title">Directorio: Clase_07</h2>
             <div class="grid">
                 <div class="card">
+                    <div class="model-container">
+                        <model-viewer src="modelos/traductor.glb" auto-rotate rotation-per-second="30deg" camera-orbit="0deg 90deg 2m" disable-zoom></model-viewer>
+                    </div>
                     <div class="card-title">Traductor</div>
                     <a href="https://traductor-ipxgbappqwcw9wmtqddyqvv.streamlit.app/" target="_blank" class="btn">EJECUTAR .EXE</a>
                 </div>
                 <div class="card">
+                    <div class="model-container">
+                        <model-viewer src="modelos/ocr.glb" auto-rotate rotation-per-second="30deg" camera-orbit="0deg 90deg 2m" disable-zoom></model-viewer>
+                    </div>
                     <div class="card-title">OCR</div>
                     <a href="https://ocr-clase-7-8wgd2bf4rhhdnplb52oxpm.streamlit.app/" target="_blank" class="btn">EJECUTAR .EXE</a>
                 </div>
                 <div class="card">
+                    <div class="model-container">
+                        <model-viewer src="modelos/ocr_audio.glb" auto-rotate rotation-per-second="30deg" camera-orbit="0deg 90deg 2m" disable-zoom></model-viewer>
+                    </div>
                     <div class="card-title">OCR Audio</div>
                     <a href="https://ocr-audio-clase7-jfz3mwxpp46uwno5xyfutz.streamlit.app/" target="_blank" class="btn">EJECUTAR .EXE</a>
                 </div>
@@ -251,14 +289,23 @@
             <h2 class="class-title">Directorio: Clase_08</h2>
             <div class="grid">
                 <div class="card">
+                    <div class="model-container">
+                        <model-viewer src="modelos/wordcloud.glb" auto-rotate rotation-per-second="30deg" camera-orbit="0deg 90deg 2m" disable-zoom></model-viewer>
+                    </div>
                     <div class="card-title">Wordcloud</div>
                     <a href="https://wordcloud-clase8-hxs9htgtrtb9wqfc9z5o59.streamlit.app/" target="_blank" class="btn">EJECUTAR .EXE</a>
                 </div>
                 <div class="card">
+                    <div class="model-container">
+                        <model-viewer src="modelos/sentify.glb" auto-rotate rotation-per-second="30deg" camera-orbit="0deg 90deg 2m" disable-zoom></model-viewer>
+                    </div>
                     <div class="card-title">Sentify</div>
                     <a href="https://sentimenta---clase-8-uatalbpxsc4zhpjanabgtj.streamlit.app/" target="_blank" class="btn">EJECUTAR .EXE</a>
                 </div>
                 <div class="card">
+                    <div class="model-container">
+                        <model-viewer src="modelos/sentify_search.glb" auto-rotate rotation-per-second="30deg" camera-orbit="0deg 90deg 2m" disable-zoom></model-viewer>
+                    </div>
                     <div class="card-title">Sentify Search</div>
                     <a href="https://tfidf-clase-8-juc8jdmdrpwghna6f4b8hg.streamlit.app/" target="_blank" class="btn">EJECUTAR .EXE</a>
                 </div>
@@ -270,10 +317,16 @@
             <h2 class="class-title">Directorio: Clase_09</h2>
             <div class="grid">
                 <div class="card">
+                    <div class="model-container">
+                        <model-viewer src="modelos/yolo.glb" auto-rotate rotation-per-second="30deg" camera-orbit="0deg 90deg 2m" disable-zoom></model-viewer>
+                    </div>
                     <div class="card-title">YOLOv5</div>
                     <a href="https://yolov5-clase9-9tg7bdcggnqyapb7p4z8yn.streamlit.app/" target="_blank" class="btn">EJECUTAR .EXE</a>
                 </div>
                 <div class="card">
+                    <div class="model-container">
+                        <model-viewer src="modelos/teachable.glb" auto-rotate rotation-per-second="30deg" camera-orbit="0deg 90deg 2m" disable-zoom></model-viewer>
+                    </div>
                     <div class="card-title">Teachable Machine</div>
                     <a href="https://tm-clase9-6kcwat3b8fqtgeggtabkaw.streamlit.app/" target="_blank" class="btn">EJECUTAR .EXE</a>
                 </div>
